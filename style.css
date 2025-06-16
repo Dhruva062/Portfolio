@@ -48,6 +48,11 @@
       opacity: 1;
       transform: translateX(0);
     }
+    .card-img-top,
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+}
     .hero {
   display: flex;
   flex-wrap: wrap;

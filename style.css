@@ -7,10 +7,10 @@ body {
   background-color: #111;
   color: #fff;
   overflow-x: hidden;
-  padding-top: 70px; /* For navbar space */
+  padding-top: 70px; 
 }
 
-/* Bubble Animation */
+
 .bubbles {
   position: fixed;
   top: 0;
@@ -34,7 +34,7 @@ body {
   100% { transform: translateY(-120vh) scale(1.2); opacity: 0; }
 }
 
-/* Sections */
+
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -77,7 +77,7 @@ body {
   transform: translateX(0);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;

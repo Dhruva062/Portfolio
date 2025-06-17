@@ -34,23 +34,23 @@ body {
   100% { transform: translateY(-120vh) scale(1.2); opacity: 0; }
 }
 
-
 .hero {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px 20px;
+  justify-content: center; 
+  gap: 2rem; 
+  padding: 60px 20px;
   min-height: 100vh;
-  gap: .1rem; 
 }
-.hero-text h1 {
-  font-size: 48px;
+.hero-text {
+  flex: 0 1 auto;
+  max-width: 500px;
 }
 .hero-img img {
-  width: 300px;
+  width: 250px;
   border-radius: 50%;
 }
+
 .section {
   padding: 80px 0;
 }
@@ -87,7 +87,7 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 60px 20px;
+    gap: 1.5rem;
   }
   .section {
     padding: 40px 15px;

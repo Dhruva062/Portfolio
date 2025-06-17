@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DJ portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ Portfolio</title>
+
+  <!-- Bootstrap + Font Awesome + Google Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<div class="meteor-shower" id="meteorShower"></div>
+<!-- Bubbles Animation -->
+<div class="bubbles" id="bubbles"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">DJ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- Hero Section -->
-<section class="hero fade-in-left">
+<section class="hero fade-in-left" id="home">
   <div class="hero-text">
     <h1>Hello, I’m Dhruva</h1>
     <p>Very Hard Working Developer</p>
@@ -24,7 +47,7 @@
     <a href="#skills" class="btn btn-outline-light">View Skills</a>
   </div>
   <div class="hero-img">
-    <img src="me.jpg" alt="Profile Photo">
+    <img src="me.jpg" alt="Profile Photo"/>
   </div>
 </section>
 
@@ -46,7 +69,7 @@
           <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Health Bridge</h5>
-            <p class="card-text"> Pharmacy Management Web System.</p>
+            <p class="card-text">Pharmacy Management Web System.</p>
           </div>
         </div>
       </div>
@@ -64,7 +87,7 @@
           <img src="sum.png" class="card-img-top" alt="Project 3">
           <div class="card-body">
             <h5 class="card-title">PDF Summarizer</h5>
-            <p class="card-text">ODF summarizer using openai.</p>
+            <p class="card-text">PDF summarizer using OpenAI.</p>
           </div>
         </div>
       </div>
@@ -76,35 +99,20 @@
 <section class="section skills fade-in-left" id="skills">
   <div class="container">
     <h2 class="text-center mb-5">My Skills</h2>
-    <div class="mb-3">
-      <label>HTML</label>
-      <div class="progress">
-        <div class="progress-bar bg-success" style="width: 90%">90%</div>
-      </div>
+    <div class="mb-3"><label>HTML</label>
+      <div class="progress"><div class="progress-bar bg-success" style="width: 90%">90%</div></div>
     </div>
-    <div class="mb-3">
-      <label>CSS</label>
-      <div class="progress">
-        <div class="progress-bar bg-info" style="width: 85%">85%</div>
-      </div>
+    <div class="mb-3"><label>CSS</label>
+      <div class="progress"><div class="progress-bar bg-info" style="width: 85%">85%</div></div>
     </div>
-    <div class="mb-3">
-      <label>JavaScript</label>
-      <div class="progress">
-        <div class="progress-bar bg-warning" style="width: 75%">75%</div>
-      </div>
+    <div class="mb-3"><label>JavaScript</label>
+      <div class="progress"><div class="progress-bar bg-warning" style="width: 75%">75%</div></div>
     </div>
-    <div class="mb-3">
-      <label>Python</label>
-      <div class="progress">
-        <div class="progress-bar bg-primary" style="width: 60%">60%</div>
-      </div>
+    <div class="mb-3"><label>Python</label>
+      <div class="progress"><div class="progress-bar bg-primary" style="width: 60%">60%</div></div>
     </div>
-    <div class="mb-3">
-      <label>PHP</label>
-      <div class="progress">
-        <div class="progress-bar bg-secondary" style="width: 75%">75%</div>
-      </div>
+    <div class="mb-3"><label>PHP</label>
+      <div class="progress"><div class="progress-bar bg-secondary" style="width: 75%">75%</div></div>
     </div>
   </div>
 </section>
@@ -114,9 +122,7 @@
   <div class="container text-center">
     <h2 class="mb-4">Connect with Me</h2>
     <div class="social-icons">
-      <!-- <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> -->
       <a href="https://www.linkedin.com/in/dhrubajyoti-nath-546a15207/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> -->
       <a href="https://github.com/Dhruva062" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </div>
@@ -127,19 +133,23 @@
   <p>&copy; 2025 dhrubajyoti nath. All rights reserved.</p>
 </footer>
 
+<!-- Scripts -->
 <script>
-  // Generate meteors
-  const meteorShower = document.getElementById('meteorShower');
-  for (let i = 0; i < 50; i++) {
-    const meteor = document.createElement('div');
-    meteor.classList.add('meteor');
-    meteor.style.left = `${Math.random() * 100}vw`;
-    meteor.style.animationDuration = `${Math.random() * 3 + 2}s`;
-    meteor.style.animationDelay = `${Math.random() * 10}s`;
-    meteorShower.appendChild(meteor);
+  // Bubble animation generator
+  const bubblesContainer = document.getElementById('bubbles');
+  for (let i = 0; i < 40; i++) {
+    const bubble = document.createElement('div');
+    const size = Math.random() * 30 + 10;
+    bubble.classList.add('bubble');
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+    bubble.style.left = `${Math.random() * 100}vw`;
+    bubble.style.animationDuration = `${Math.random() * 10 + 5}s`;
+    bubble.style.animationDelay = `${Math.random() * 10}s`;
+    bubblesContainer.appendChild(bubble);
   }
 
-  // Reveal animations on scroll
+  // Reveal on scroll
   const sections = document.querySelectorAll('.fade-in-left');
   const revealOnScroll = () => {
     const triggerBottom = window.innerHeight * 0.85;
@@ -153,7 +163,6 @@
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll);
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

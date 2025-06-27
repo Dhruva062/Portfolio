@@ -45,6 +45,7 @@
     </h1>
     <p class="hero-subtitle">I’m a very hard working software developer .</p>
     <a href="#contact" class="btn-cta">Reach Out</a>
+    <a href="cv1.pdf" class="btn-cta" style="background-color: rgb(67, 235, 137);" target="_blank" >My CV</a>
   </div>
 </section>
 
@@ -121,6 +122,13 @@
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/dhrubajyoti-nath-546a15207/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/Dhruva062" target="_blank"><i class="fab fa-github"></i></a>
+     <div class="email-popup-container">
+  <a href="#" onclick="toggleEmailPopup(event)" title="Click to show email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <div class="email-popup" id="emailPopup">dhrubajyotinath062@email.com</div>
+</div>
+
     </div>
   </div>
 </section>
@@ -159,6 +167,17 @@
   };
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll);
+
+  function toggleEmailPopup(e) {
+    e.preventDefault();
+    const popup = document.getElementById("emailPopup");
+    popup.classList.toggle("show");
+
+    // Optional: hide after 3 seconds
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 3000);
+  }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

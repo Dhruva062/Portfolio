@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ Portfolio</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+<div class="bubbles" id="bubbles"></div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark transparent-navbar visible">
+  <div class="container">
+    <a class="navbar-brand" href="#">Dhrubajyoti Nath's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-centered" id="home">
+  <div class="container text-center">
+    <img src="me2.jpg" alt="Profile Photo" class="hero-profile-img">
+    <h1 class="hero-title">
+      Hi, I’m <span class="highlight-name">&lt;/Dhruva&gt;</span>
+    </h1>
+    <p class="hero-subtitle">I’m a very hard working software developer .</p>
+    <a href="#contact" class="btn-cta">Reach Out</a>
+    <a href="cv1.pdf" class="btn-cta" style="background-color: rgb(67, 235, 137);" target="_blank" >My CV</a>
+  </div>
+</section>
+
+
+<section class="section text-center fade-in-left" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I design modern websites and user experiences. Let's create something great together!</p>
+  </div>
+</section>
+
+
+<section class="section portfolio bg-dark fade-in-left" id="portfolio">
+  <div class="container">
+    <h2 class="text-center mb-5">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="m2.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Health Bridge</h5>
+            <p class="card-text">Pharmacy Management Web System.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="kuhi2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Kuhipath</h5>
+            <p class="card-text">Children Assamese story, poem and quiz Android app.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="sum.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">PDF Summarizer</h5>
+            <p class="card-text">PDF summarizer using OpenAI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section skills fade-in-left" id="skills">
+  <div class="container">
+    <h2 class="text-center mb-5">My Skills</h2>
+    <div class="mb-3"><label>HTML</label>
+      <div class="progress"><div class="progress-bar bg-success" style="width: 90%">90%</div></div>
+    </div>
+    <div class="mb-3"><label>CSS</label>
+      <div class="progress"><div class="progress-bar bg-info" style="width: 85%">85%</div></div>
+    </div>
+    <div class="mb-3"><label>JavaScript</label>
+      <div class="progress"><div class="progress-bar bg-warning" style="width: 75%">75%</div></div>
+    </div>
+    <div class="mb-3"><label>Python</label>
+      <div class="progress"><div class="progress-bar bg-primary" style="width: 60%">60%</div></div>
+    </div>
+    <div class="mb-3"><label>PHP</label>
+      <div class="progress"><div class="progress-bar bg-secondary" style="width: 75%">75%</div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-dark fade-in-left" id="contact">
+  <div class="container text-center">
+    <h2 class="mb-4">Connect with Me</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/dhrubajyoti-nath-546a15207/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Dhruva062" target="_blank"><i class="fab fa-github"></i></a>
+     <div class="email-popup-container">
+  <a href="#" onclick="toggleEmailPopup(event)" title="Click to show email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <div class="email-popup" id="emailPopup">dhrubajyotinath062@email.com</div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-center py-4 bg-black text-light">
+  <p>&copy; 2025 dhrubajyoti nath. All rights reserved.</p>
+</footer>
+
+
+<script>
+
+  const bubblesContainer = document.getElementById('bubbles');
+  for (let i = 0; i < 40; i++) {
+    const bubble = document.createElement('div');
+    const size = Math.random() * 30 + 10;
+    bubble.classList.add('bubble');
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+    bubble.style.left = `${Math.random() * 100}vw`;
+    bubble.style.animationDuration = `${Math.random() * 10 + 5}s`;
+    bubble.style.animationDelay = `${Math.random() * 10}s`;
+    bubblesContainer.appendChild(bubble);
+  }
+
+
+  const sections = document.querySelectorAll('.fade-in-left');
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < triggerBottom) {
+        section.classList.add('show');
+      }
+    });
+  };
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  function toggleEmailPopup(e) {
+    e.preventDefault();
+    const popup = document.getElementById("emailPopup");
+    popup.classList.toggle("show");
+
+    // Optional: hide after 3 seconds
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 3000);
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
